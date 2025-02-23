@@ -1,0 +1,15 @@
+Braden Begnaud    C00462494
+1.	ПBranch_id,No_of_copies((ϭTitle=’The Lost Tribe’(BOOK) |X| BOOK_COPIES))
+2.	ПNo_of_copies((ϭTitle=’The Lost Tribe’(BOOK) |X| BOOK_COPIES)|X| LIBRARY_BRANCH)
+
+
+1.	ϭ (VIEWERS-ПSSN, fav_movie_name(VIEWERS))
+2.	ϭ birth_year<1995(П Gender=male(VIEWERS))
+3.	ϭmovie_name=fav_movie_name(( (SHOWS) X Пfav_movie_name(VIEWERS))
+4.	ПSSN,name(ϭmovie_name=fav_movie_name(Likes |X| Viewers))
+5.	Пname,phone( ϭSSN = (Пowner_ssn(ϭmovie_name=’Despicable Me 3’ (THEATERS|X|SHOWS)))(OWNERS)
+6.	ПSSN,name(ϭmovie_name!=fav_movie_name(Likes |X| Viewers))
+7.	Пname(ϭ city=’Baton Rogue’(OWNERS |X| Пowner_ssn,Theatres_nameTHEATERS))
+8.	П name(ϭ owner_ssn =(ПOwner_ssn(ϭ genre=western(THEATERS |X| MOVIES))) OWNERS)
+9.	ϭ phone (OWNERS |X| THEATERS – Пphone OWNERS ∩ П phone THEATERS)
+10.	П names(ϭ city = П city(ϭname=’Henry’(OWNERS))OWNERS)
