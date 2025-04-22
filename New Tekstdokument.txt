@@ -1,0 +1,13 @@
+Dinobase Format - 
+
+
+SpeciminID[PK] Auto Increment, Scientific Name[fk], completeness
+
+Scientific Name[PK], common name, MaxSize, MinSize, Diet, number
+
+Site[PK], SpeciminID[fk]
+
+
+Spinosaurus - 
+
+Scientific Name - Spinosaurus aegyptiacus, Common Name - Spinosaurus, 
