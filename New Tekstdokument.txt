@@ -1,0 +1,61 @@
+Dinobase Format - 
+
+
+SPECIMEN - SpeciminID[PK] Auto Increment, Scientific Name[fk], completeness
+
+
+CREATURE SPECIFICATIONS - Scientific Name[PK], common name, MaxSize, MinSize, Diet, number of specimens
+
+
+LOCATION - Site[PK], SpeciminID[fk]
+
+
+
+
+
+
+
+
+
+Spinosaurus - 
+
+Scientific Name - Spinosaurus aegyptiacus, Common Name - Spinosaurus, Max - 50 feet, Min 50 feet, Diet - Carnivorous, number - 1
+
+Velociraptor - 
+
+Scientific Name - Velociraptor mongoliensis, Common Name - Velociraptor, Max - 1.8 feet, Min 1.1 feet, Diet - Carnivorous, number - 3
+
+
+Therizinosaur - 
+
+Scientific Name - Therizinosaurus cheloniformis, Common Name - Therizinosaur, Max - 33.2 feet, Min 31.5 feet, Diet - Herbivorous, number - 2
+
+Nanuqsaurus - 
+
+Scientific Name - Nanuqsaurus hoglundi, Common Name - Nanuqsaurus, Max - 23 feet, Min 23 feet, Diet - Carnivorous, number - 1
+
+Oviraptor - 
+
+Scientific Name - Oviraptor philoceratops, Common Name - Oviraptor, Max - 6.7 feet, Min 4.3 feet, Diet - Carnivorous, number - 6
+
+Stegosaurus - 
+
+Scientific Name - Stegosaurus stenops, Common Name - Stegosaurus, Max - 25.1 feet, Min 15.8 feet, Diet - Carnivorous, number - 3
+
+Quetzalcoatlus - 
+
+Scientific Name - Quetzalcoatlus northropi, Common Name - Quetzalcoatlus, Max - 35.7 feet, Min 33.8 feet, Diet - Carnivorous, number - 2
+
+Diplodocus - 
+
+Scientific Name - Diplodocus longus, Common Name - Diplodocus, Max - 84.7 feet, Min 77 feet, Diet - Herbivorous, number - 5
+
+Parasaurolophus - 
+
+Scientific Name - Parasaurolophus walkeri, Common Name - Parasaurus, Max - 30.2 feet, Min 29.9 feet, Diet - Herbivorous, number - 3
+
+
+
+
+
+
