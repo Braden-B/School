@@ -1,60 +1,18 @@
-Braden Begnaud C00462494
-
-1. 
-a. T(n) = (4n^2) + 4 O = n^2
-b. T(n) = n + n O = n (the additional calculations are just take, and only take T(1), and are executed n times.)
-c. T(n) = 2^n + n O = 2^n
-2. Yes. 
-Take the limit to infinity of the highest order for each side (n^6 for the left and n^7 for the right)
-n = 10, 10^6 < c10^7
-n = 100, 100^6 < c100^7
-n = 1000, 1000^6 < 1000^7
-3. Yes.
-n = 10, 10^4 < c10^6
-n = 100, 100^4 < c100^6
-4. 
-Take the highest order, then for Omega take the limit approaching zero, and for big O take the limit approaching infinity. We can ignore lower orders as they are significantly smaller than the highest order
-a. 
-n = 0.1, 0.1^5 <= c0.1^5 
-n = 0.01, 0.01^5 <= c0.1^5
-So we see 5n^3 + 3100n^5 is in Omega(n^5)
-n = 10, 10^5 <= c10^5
-n = 100, 100^5 <= c100^5
-We see also 5n^3 + 3100n^5 is in O(n^5)
-Therefore, 5n^3 + 3100n^5 is in Θ(n^5)
-
-b. 
-n = 0.1, 0.1^7 <= c0.1^7 
-n = 0.01, 0.01^7 <= c0.1^7
-So we see the equation is in Omega(n^7)
-n = 10, 10^7 <= c10^7
-n = 100, 100^7 <= c100^7
-We see also the equation is in O(n^7)
-Therefore, the equation is in Θ(n^7)
-5. 
-a. 
-T(n-1) = T(n-2) + 2n-1
-T(n-2) = T(n-4) + 3n-3
-T(n-4) = T(n-8) + 4n-7
-T(n-8) = T(n-16) + 5n-24
-T(n-2^i) + i*n - 2^i
-T(n-2^i) = 0, log n = i
-Θ = n log n
-b. 
-T(n) = 2T(n-1)+3
-T(n-1) = 2(2T(n-2)+3)+3)
-T(n-2) = 2(4T(n-3)+3+3+3
-T(n-i) = 2^i T(n-1) +3^i
-T(0) = 0, n-i = 0, n=i
-2^n*0 + 3^n
-Θ = 3^n
-c. 
-T(n) = 2T(n/2) +n
-T(n/2) = 4T(n/4) +n +n
-T(n/4) = 8T(n/8) +n +n +n
-T(n/2^i) = 2^i T(1) i*n
-T(1) = 1, log n = i
-2^log n + log n * n
-Θ = n log n
-6. 
-The big O for this algorithm is O(3^n) because you are making 3 calculations for each run of the function, which runs n times. Therefore it is expected to have a larger time.
+	1. 32 bit -> 4 byte
+	128K/64 = 2048 cache blocks
+	2048=2^11
+	64 = 64 2^5
+	6 bits offset, 11 index, 15 tag
+	0x40060 = Tag :000000000000010
+		         Index: 00000000001
+		         Offset: 100000
+	Cache block = #1
+	
+	2. 0x28 = 0010 10 00 = block 2, tag 2, hit
+	0x1A = 0001 10 10 = block 2, tag 1, miss, (60,61,62,63)
+	0x14 = 0001 01 00 = block 1, tag 1, miss (invalid), (EE,22,16,35)
+	0x20 = 0010 00 00 = block 0, tag 2, miss, (18,62,AA,00)
+	
+	(32 bits for data, 1 bit for valid, 4 bits for tag)* 4 (blocks) = 148 bits
+	
+	4 bytes of data, 4 blocks, so 16 bytes
